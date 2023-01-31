@@ -1,4 +1,4 @@
-function Invoke-Rubeus
+function sendit
 {
 
     [CmdletBinding()]
