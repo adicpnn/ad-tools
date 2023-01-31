@@ -26,4 +26,4 @@ function Invoke-Sendit
     $Results
 }
 
-Invoke-Sendit
+Invoke-Sendit -command triage
