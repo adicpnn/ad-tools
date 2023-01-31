@@ -1,4 +1,4 @@
-function sendit
+function Invoke-Sendit
 {
 
     [CmdletBinding()]
@@ -25,3 +25,5 @@ function sendit
     $Results = $StringWriter.ToString()
     $Results
 }
+
+Invoke-Sendit
